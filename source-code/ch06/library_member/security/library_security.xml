@@ -1,0 +1,6 @@
+<odoo>
+  <!-- 修改权限组名称 -->
+  <record id="library_app.library_group_user" model="res.groups">
+     <field name="name">Librarian</field>
+  </record>
+</odoo>

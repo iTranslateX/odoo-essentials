@@ -1,0 +1,15 @@
+<odoo>
+    <!--图书应用菜单-->
+    <menuitem id="menu_library" name="Library"/>
+    <!-- 打开图书列表的动作 -->
+    <record id="action_library_book" model="ir.actions.act_window">
+        <field name="name">Library Books</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- 打开图书列表的菜单 -->
+    <menuitem id="menu_library_book"
+              name="Books"
+              parent="menu_library"
+              action="action_library_book" />
+</odoo>
